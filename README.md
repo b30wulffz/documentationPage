@@ -2,7 +2,7 @@
 
 I have made a technical documentation page which is totally responsive and made purely out of HTML and CSS.
 
-![Multiple Devices View](screenShots/devices.png)
+<img src="screenShots/devices.PNG">
 
 ## Fork it
 
