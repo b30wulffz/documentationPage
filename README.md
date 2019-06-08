@@ -2,7 +2,7 @@
 
 I have made a technical documentation page which is totally responsive and made purely out of HTML and CSS.
 
-<img src="screenShots/devices.PNG">
+<img src="screenShots/devices.PNG" alt="Screenshots on Multiple Devices">
 
 ## Fork it
 
@@ -12,9 +12,9 @@ You can find/fork this as well as my other projects on [CodePen](https://codepen
 
 You can visit the website by clicking [here](https://b30wulffz.github.io/documentationPage/).
 
-![iPhone view](screenShots/iphone.png)
+![iPhone view](screenShots/iphone.PNG)
 
-![Windows view](screenShots/windows.png)
+![Windows view](screenShots/windows.PNG)
 
 ## Sources
 
