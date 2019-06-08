@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <title>FCC: Technical Documentation Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav id="navbar">
+      <header><h1>Tkinter Docs</h1></header>
+      <div>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Creating_GUI_App" class="nav-link">Creating GUI App</a>
+        <a href="#Button" class="nav-link">Button</a>
+        <a href="#Canvas" class="nav-link">Canvas</a>
+        <a href="#Checkbutton" class="nav-link">Checkbutton</a>
+        <a href="#Entry" class="nav-link">Entry</a>
+        <a href="#Frame" class="nav-link">Frame</a>
+        <a href="#Label" class="nav-link">Label</a>
+
+      </div>
+    </nav>
+    
+    <main id="main-doc">
+      
+      <section class="main-section" id="Introduction"> 
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <p>
+          Tkinter is the standard GUI library for Python. Python when combined with Tkinter provides a fast and easy way to create GUI applications. Tkinter provides a powerful object-oriented interface to the Tk GUI toolkit.
+        </p>
+      </section>
+      
+      <section class="main-section" id="Creating_GUI_App"> 
+        <header>
+          <h2>Creating GUI App</h2>
+        </header>
+        <p>
+          Creating a GUI application using Tkinter is an easy task. All you need to do is perform the following steps 
+        </p>
+        <ul>
+          <li>Import the Tkinter module.</li>
+          <li>Create the GUI application main window.</li>
+          <li>Add one or more of the above-mentioned widgets to the GUI application.</li>
+          <li>Enter the main event loop to take action against each event triggered by the user.</li>
+        </ul>
+        <code>
+          #!/usr/bin/python
+          <br><br>
+          import Tkinter <br>
+          top = Tkinter.Tk() <br>
+          # Code to add widgets will go here... <br>
+          top.mainloop() <br>
+        </code>
+      </section>
+      
+      <section class="main-section" id="Button"> 
+        <header>
+          <h2>Button</h2>
+        </header>
+        <p>
+          The Button widget is used to add buttons in a Python application. These buttons can display text or images that convey the purpose of the buttons. You can attach a function or a method to a button which is called automatically when you click the button.
+        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+          w = Button ( master, option=value, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>activebackground- Background color when the button is under the cursor.</li>
+              <li>activeforeground- Foreground color when the button is under the cursor.</li>
+              <li>bd- Border width in pixels. Default is 2.</li>
+              <li>bg- Normal background color.</li>
+              <li>command- Function or method to be called when the button is clicked.</li>
+              <li>fg- Normal foreground (text) color.</li>
+              <li>font- Text font to be used for the button's label.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Canvas"> 
+        <header>
+          <h2>Canvas</h2>
+        </header>
+        <p>
+            The Canvas is a rectangular area intended for drawing pictures or other complex layouts. You can place graphics, text, widgets or frames on a Canvas.
+        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+            w = Canvas ( master, option=value, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>bd- Border width in pixels. Default is 2.</li>
+              <li>bg- Normal background color.</li>
+              <li>confine- If true (the default), the canvas cannot be scrolled outside of the scrollregion.</li>
+              <li>cursor- Cursor used in the canvas like arrow, circle, dot etc.</li>
+              <li>height- Size of the canvas in the Y dimension.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Checkbutton"> 
+        <header>
+          <h2>Checkbutton</h2>
+        </header>
+        <p>
+          The Checkbutton widget is used to display a number of options to a user as toggle buttons. The user can then select one or more options by clicking the button corresponding to each option.
+        </p>
+        <p>
+          You can also display images in place of text.
+        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+          w = Checkbutton ( master, option, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>activebackground- Background color when the button is under the cursor.</li>
+              <li>activeforeground- Foreground color when the button is under the cursor.</li>
+              <li>bg- The normal background color displayed behind the label and indicator.</li>
+              <li>bitmap- To display a monochrome image on a button.</li>
+              <li>bd- The size of the border around the indicator. Default is 2 pixels.</li>
+              <li>command- A procedure to be called every time the user changes the state of this checkbutton.</li>
+              <li>cursor- If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the checkbutton.</li>
+              <li>disabledforeground- The foreground color used to render the text of a disabled checkbutton. The default is a stippled version of the default foreground color.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Entry"> 
+        <header>
+          <h2>Entry</h2>
+        </header>
+        <p>
+          The Entry widget is used to accept single-line text strings from a user.
+          <ul type="circle">
+            <li>If you want to display multiple lines of text that can be edited, then you should use the Text widget.</li>
+            <li>If you want to display one or more lines of text that cannot be modified by the user, then you should use the Label widget.</li>
+          </ul>          
+        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+          w = Entry( master, option, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>bg- The normal background color displayed behind the label and indicator.</li>
+              <li>bd- The size of the border around the indicator. Default is 2 pixels.</li>
+              <li>command- A procedure to be called every time the user changes the state of this checkbutton.</li>
+              <li>cursor- If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the checkbutton.</li>
+              <li>font- The font used for the text.</li>
+              <li>exportselection- By default, if you select text within an Entry widget, it is automatically exported to the clipboard. To avoid this exportation, use exportselection=0.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Frame"> 
+        <header>
+          <h2>Frame</h2>
+        </header>
+        <p>
+          The Frame widget is very important for the process of grouping and organizing other widgets in a somehow friendly way. It works like a container, which is responsible for arranging the position of other widgets.
+        </p>
+        <p>
+          It uses rectangular areas in the screen to organize the layout and to provide padding of these widgets. A frame can also be used as a foundation class to implement complex widgets.
+        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+          w = Frame ( master, option, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>bg- The normal background color displayed behind the label and indicator.</li>
+              <li>bd- The size of the border around the indicator. Default is 2 pixels.</li>
+              <li>cursor- If you set this option to a cursor name (arrow, dot etc.), the mouse cursor will change to that pattern when it is over the checkbutton.</li>
+              <li>height- The vertical dimension of the new frame.</li>
+              <li>highlightbackground- Color of the focus highlight when the frame does not have focus.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+      
+      <section class="main-section" id="Label"> 
+        <header>
+          <h2>Label</h2>
+        </header>
+        <p>
+          This widget implements a display box where you can place text or images. The text displayed by this widget can be updated at any time you want.
+        </p>
+        <p>
+          It is also possible to underline part of the text (like to identify a keyboard shortcut) and span the text across multiple lines.        </p>
+        <p>Here is the simple syntax to create this widget −</p>
+        <code>
+          w = Label ( master, option, ... )
+        </code>
+        <h4>Parameters: </h4>
+        <ul>
+          <li>master − This represents the parent window.</li>
+          <li>
+            options − Here is the list of most commonly used options for this widget. These options can be used as key-value pairs separated by commas.
+          
+            <ol>
+              <li>anchor- This options controls where the text is positioned if the widget has more space than the text needs. The default is anchor=CENTER, which centers the text in the available space.</li>
+              <li>bg- The normal background color displayed behind the label and indicator.</li>
+              <li>bitmap- Set this option equal to a bitmap or image object and the label will display that graphic.</li>
+            </ol>
+            
+          </li>
+        </ul>
+      </section>
+      
+      <footer>
+        For more info: 
+        <a href="https://www.tutorialspoint.com/python/tk_label.htm">TutorialsPoint</a>
+    </footer>
+    </main>
+    
+  </body>
+</html>
