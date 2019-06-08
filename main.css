@@ -51,7 +51,6 @@ a{
     grid-template-rows: 30vh auto;
   
     grid-template-areas: "nav" "main";
-    width: 100vw;
   }
   #navbar{
     margin:0;
