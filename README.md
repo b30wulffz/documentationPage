@@ -10,7 +10,7 @@ You can find/fork this as well as my other projects on [CodePen](https://codepen
 
 ## ScreenShots
 
-You can visit the website by clicking [here](https://b30wulffz.github.io/documentationPage/).
+You can visit the website by clicking [here](https://b30wulffz.github.io/documentationPage/). It makes use of media queries and on resizing aligns itself, suitable for mobile, desktops, and tablets.
 
 ![iPhone view](screenShots/iphone.PNG)
 
